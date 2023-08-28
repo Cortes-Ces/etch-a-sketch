@@ -3,9 +3,27 @@
     margin: auto;
 } */
 
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+}
+
+/* .container{
+    display: flex;
+    border: 1px solid black;
+    padding: auto;
+    height: 400px;
+    width: 400px;
+};
+
 div {
+    display: flex;
+    background-color: violet;
     border: 1px solid black;
     padding: 10;
+    padding: auto;
     height: 70px;
     width: 70px;
-}
+}; */
+
