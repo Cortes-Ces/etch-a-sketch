@@ -1,6 +1,4 @@
-document.body.onload = addElement;
+const div = document.createElement("div");
 
-function addElement() {
-    // Create a new div element
-    const newDiv = document.createElement('div');
-}
+// Add div to body
+document.body.appendChild(div);
