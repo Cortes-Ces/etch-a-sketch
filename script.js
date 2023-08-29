@@ -1,11 +1,21 @@
-const container = document.createElement("container");
+const container = document.querySelector('.container')
+const btnBlack = document.createElement('button')
+const btnGray = document.createElement('button')
+const btnRGB = document.createElement('button')
+const btnSize = document.createElement('button')
+const buttonsContainer = document.createElement('buttons')
 
-//function createSquare() {
-const div = document.createElement("div");
-// Add div to body
-document.body.appendChild(div);
-//};
+// Create grid dynamically using divs
+function createDivs(col, rows) {
+    for(let i = 0; i < (col * rows); i++){
+        const div = document.createElement('div')
+        container.style.border = '1px solid black';
+        div.style.border = '1px solid '
+        container.style.gridTemplateColumns = `repeat(${col}, ifr)`;
+        container.style.gridTemplateRows = `repeat(${rows}, ifr)`;
+        container.appendChild(div).classList.add('box')
+    }
+}
 
-container.appendChild(div);
+createDivs(16, 16)
 
-document.body.appendChild(container);
