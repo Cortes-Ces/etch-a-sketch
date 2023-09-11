@@ -22,6 +22,31 @@ function createDivs(col, rows) {
 
 createDivs(16,16)
 
+function gridSize() {
+    //const boxs = container.querySelectorAll('.box')
+    btnSize.className = 'btn btn-danger';
+    btnSize.textContent = 'Grid Size';
+    btnSize.addEventListener('click', () => {
+        let user = prompt('What size do you want for the grid?')
+        if(user === null || user < 1) {
+            createDivs(16, 16);
+            blackColor();
+            grayColor();
+            rgbColor();
+            resetBtn();
+        } else {
+            createDivs(user, user);
+            blackColor()
+            grayColor()
+            rgbColor()
+            resetBtn()
+        }
+    })
+    
+    buttonsContainer.appendChild(btnSize)
+}
+gridSize()
+
 function blackColor() {
     const boxs = container.querySelectorAll('.box')
     btnBlack.className = 'btn btn-dark';
@@ -87,7 +112,5 @@ function resetBtn() {
 
 buttonsContainer.appendChild(btnReset)
 }
-
-    
 resetBtn()
 
