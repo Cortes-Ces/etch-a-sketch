@@ -5,3 +5,7 @@
 # Tasks
 1. Create a webpage with 16x16 grid of square divs
 - Create divs using JavaScript
+- Create elements using JavaScript
+
+# Bugs
+- Botton divs on Grid show thick black line
